@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+ <!-- 员工信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="com.mr.Train" table="train">
+ 		<!-- id值 -->
+ 		<id name="car_id" column="car_id" type="int">
+			<generator class="native"/>
+		</id>
+		<!-- 姓名 -->
+		<property name="origin" type="string" length="45">
+			<column name="origin"></column>
+		</property>
+		<property name="point" type="string" length="45">
+			<column name="point"></column>
+		</property>
+		<property name="num" type="int">
+			<column name="num"/>
+		</property>
+		<property name="price" type="int">
+			<column name="price"/>
+		</property>
+ 	</class>
+ </hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Androidtest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Selectservlet</display-name>
+    <servlet-name>Selectservlet</servlet-name>
+    <servlet-class>com.mr.Selectservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Selectservlet</servlet-name>
+    <url-pattern>/Selectservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Buyservlet</display-name>
+    <servlet-name>Buyservlet</servlet-name>
+    <servlet-class>com.mr.Buyservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Buyservlet</servlet-name>
+    <url-pattern>/Buyservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
