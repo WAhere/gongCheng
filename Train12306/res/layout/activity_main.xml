@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+		    android:id="@+id/text_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#00ffff"
+		    android:gravity="center"
+		    android:text="登录12306"
+		    android:textColor="#ffffff"
+		    android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   用   户    "
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入账号" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+          
+    <LinearLayout 
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal">
+      
+		<TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="24sp"
+             android:text="   密   码    "/>
+          
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入密码" />
+          
+    </LinearLayout>
+    
+	<Button
+	    android:id="@+id/btnload"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:background="#0055ff"
+	    android:text="登录"
+	    android:textColor="#fff" />
+	
+	<ImageView
+	    android:id="@+id/image_train1"
+	    android:layout_width="match_parent"
+	    android:layout_height="69dp"
+	    android:layout_weight="1.89"
+	    android:src="@drawable/train1" />
+   
+</LinearLayout>
